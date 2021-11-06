@@ -1,0 +1,74 @@
+
+{{!
+    This file is part of Moodle - http://moodle.org/
+
+    Moodle is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Moodle is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+}}
+{{!
+    Page navbar.
+}}
+<nav role="banner" id="header" style="box-shadow:none;transition:all 0.3s;" class="fixed-top navbar navbar-light bg-white text-pry navbar-expand moodle-has-zindex">
+
+    <div class="container navbar-nav">
+        <div data-region="drawer-toggle" class="d-inline-block mr-3">
+            <button style="background:transparent;" aria-expanded="{{#navdraweropen}}true{{/navdraweropen}}{{^navdraweropen}}false{{/navdraweropen}}" aria-controls="nav-drawer" type="button" class=" text-pry btn nav-link float-sm-left mr-1" data-action="toggle-drawer" data-side="left" data-preference="drawer-open-nav">{{#pix}}i/menubars{{/pix}}<span class="sr-only">{{#str}}sidepanel, core{{/str}}</span>
+     
+            </button>
+
+            <ul class="navbar-nav d-none d-lg-flex">
+                <!-- custom_menu -->
+                {{{ output.custom_menu }}}
+                <!-- page_heading_menu -->
+                {{{ output.page_heading_menu }}}
+            </ul>
+        </div>
+
+        <div class="header-top" id="Mainmenu">
+
+            <ul class="nav navbar-nav ml-auto" style="color:red;">
+                <div class="d-none d-lg-flex">
+                {{{ output.search_box }}}
+                </div>
+                <!-- navbar_plugin_output -->
+                <li class="nav-item" style="display: flex;align-items: center;width: 39px;justify-content: space-between;margin: 0px 50px;">                
+                <a target="_blank" href="https://wa.me/+2348096642065" class="text-pry"><span class="fa fa-whatsapp icon-fax"></span></a>
+                <a target="_blank" href="https://web.facebook.com/CL4STEM" class="text-pry"><span class="fa fa-facebook-square icon-fax"></span></a>
+                </li>
+                <!-- user_menu -->
+                <li class="nav-item d-flex align-items-center">
+                    {{{ output.user_menu }}}
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<script src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
+
+<script>
+  $(document).ready(function(){        
+    $('#action-menu-toggle-1,#action-menu-toggle-2,#action-menu-toggle-3').addClass('text-pry');  
+    $(window).scroll(function() {
+        var heightx5 = $(window).scrollTop();
+
+        //console.log(heightx5)
+        if(heightx5  >= 10) {
+            $('#header').css('box-shadow', 'rgba(0, 0, 0, 0.2) 0px 25px 20px -20px')
+        }else{
+            $('#header').css('box-shadow', 'none')
+        }
+    });      
+  })
+   
+</script>
