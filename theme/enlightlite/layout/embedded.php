@@ -22,7 +22,7 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 defined('MOODLE_INTERNAL') || die();
-
+$favicon = $OUTPUT->image_url('favicon2', 'theme');
 echo $OUTPUT->doctype() ?>
 <html <?php echo $OUTPUT->htmlattributes(); ?>>
 <head>
@@ -42,3 +42,7 @@ echo $OUTPUT->doctype() ?>
 <?php echo $OUTPUT->standard_end_of_body_html() ?>
 </body>
 </html>
+
+<script>
+    $("link[rel*='icon']").attr("href", "<?= $favicon;?>");        
+</script>

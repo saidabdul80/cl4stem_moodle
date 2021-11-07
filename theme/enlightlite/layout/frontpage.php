@@ -202,9 +202,12 @@ echo $OUTPUT->doctype() ?>
 
 <?php
 require_once(dirname(__FILE__) . '/includes/footer.php');
+$favicon = $OUTPUT->image_url('favicon2', 'theme');
 ?>
 
-<script>
+<script>    
+    $("link[rel*='icon']").attr("href", "<?= $favicon;?>");        
+    
 require(['jquery'], function($) {
 
     var parent = $("#frontpage-available-course-list #available-courses").parents('div#frontpage-available-course-list')

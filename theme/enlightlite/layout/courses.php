@@ -36,6 +36,7 @@ $fulltemplate = array_merge($check, $footer);
 $OUTPUT->doctype();
 echo $OUTPUT->render_from_template('theme_enlightlite/columns2', $fulltemplate);
 $noimgurl = $OUTPUT->image_url('no-image', 'theme');
+$favicon = $OUTPUT->image_url('favicon2', 'theme');
 ?>
 <script>
     $(document).ready(function(){
@@ -72,4 +73,5 @@ $noimgurl = $OUTPUT->image_url('no-image', 'theme');
        $(".courses").html(conts)
         $(".search-block").css("background", "none")
     });
+    $("link[rel*='icon']").attr("href", "<?= $favicon;?>");        
 </script>
