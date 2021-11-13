@@ -43,7 +43,9 @@ echo $OUTPUT->doctype() ?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
 <style>
-
+.ff-2{
+    font-family: alegreyasansR,alegreyasansM,alegreyasansB,alegreyasansL;
+}
 </style>
 </head>
 <body <?php echo $OUTPUT->body_attributes(); ?>>
@@ -182,8 +184,28 @@ echo $OUTPUT->doctype() ?>
     $mspot2urltarget = theme_enlightlite_get_setting('mspot2urltarget');
     $target = ($mspot2urltarget == '1') ? "_blank" : "_self";
     if ($mspot2status == '1') {
+        $ibbul = $OUTPUT->image_url('ibbul', 'theme');
+        $buk = $OUTPUT->image_url('buk', 'theme');
+        $kadsu = $OUTPUT->image_url('kadsu', 'theme');
     ?>
-        <div class="jumbo-viewall">
+    <br>
+    <br>
+    <h2 class="text-center ff-2" style="color:#523f6d;">PARTNERS</h2>
+    <div class="row my-5">
+        <div class="col-lg-3 col-md-3 "></div>
+        <div class="col-lg-2 col-md-2 col-sm-4 d-flex" style="justify-content:center; align-items:center">
+            <img src="<?=$ibbul; ?>" width="120px">
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-4 d-flex"  style="justify-content:center; align-items:center">
+            <img src="<?=$buk; ?>" width="130px">
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-4 d-flex"  style="justify-content:center; align-items:center">
+            <img src="<?=$kadsu; ?>" width="150px">
+        </div>
+        <div class="col-lg-3 col-md-3 "></div>
+    </div>
+    <br><br><br>
+        <!-- <div class="jumbo-viewall">
          <div class="container">
              <div class="inner-wrap">
                  <div class="desc-wrap">
@@ -193,7 +215,7 @@ echo $OUTPUT->doctype() ?>
                 <a href='<?php echo $msp2url; ?>' target="<?php echo $target;?>" class="btn-jumbo"><?php echo $msp2urltxt; ?></a>
                     </div>
          </div>
-        </div>
+        </div> -->
     <?php
     }
     ?>
