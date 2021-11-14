@@ -194,13 +194,22 @@ echo $OUTPUT->doctype() ?>
     <div class="row my-5">
         <div class="col-lg-3 col-md-3 "></div>
         <div class="col-lg-2 col-md-2 col-sm-4 d-flex" style="justify-content:center; align-items:center">
-            <img src="<?=$ibbul; ?>" width="120px">
+            <a href="https://ibbu.edu.ng" target="_blank">
+                <img src="<?=$ibbul; ?>" width="120px">
+                <p class="text-center mt-3">IBBUL</p>
+            </a>
         </div>
         <div class="col-lg-2 col-md-2 col-sm-4 d-flex"  style="justify-content:center; align-items:center">
-            <img src="<?=$buk; ?>" width="130px">
+            <a href="https://www.buk.edu.ng/" target="_blank">
+                <img src="<?=$buk; ?>" width="130px">
+                <p class="text-center mt-2">BUK</p>
+            </a>
         </div>
         <div class="col-lg-2 col-md-2 col-sm-4 d-flex"  style="justify-content:center; align-items:center">
-            <img src="<?=$kadsu; ?>" width="150px">
+            <a href="https://www.kasu.edu.ng/" target="_blank">
+                <img src="<?=$kadsu; ?>" width="150px">
+                <p class="text-center">KASU</p>
+            </a>
         </div>
         <div class="col-lg-3 col-md-3 "></div>
     </div>
