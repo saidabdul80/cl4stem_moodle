@@ -46,6 +46,7 @@ echo $OUTPUT->doctype() ?>
 .ff-2{
     font-family: alegreyasansR,alegreyasansM,alegreyasansB,alegreyasansL;
 }
+
 </style>
 </head>
 <body <?php echo $OUTPUT->body_attributes(); ?>>

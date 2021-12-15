@@ -29,7 +29,19 @@
 {{>theme_enlightlite/navbar}}
 
 {{{ theme_loader }}}
-
+<style>
+.card{
+    border:none !important;
+    box-shadow:rgb(0 0 0 / 15%) 0px 3px 3px 0px;
+    margin: 15px;
+}
+.card-body{
+    border: none !important;
+}
+.dropdown-menu.show .dropdown-item:first-child:focus-within{
+    background:none !important;
+}
+</style>
 <div id="site-header">
 
     <div class="header-main {{#headerStyle}} theme-main-header {{/headerStyle}}">
