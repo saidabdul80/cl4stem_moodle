@@ -1,28 +1,19 @@
-                                 .-..-.
-   _____                         | || |
-  /____/-.---_  .---.  .---.  .-.| || | .---.
-  | |  _   _  |/  _  \/  _  \/  _  || |/  __ \
-  * | | | | | || |_| || |_| || |_| || || |___/
-    |_| |_| |_|\_____/\_____/\_____||_|\_____)
+# Connected Learning for STEM (CL4STEM)
 
-Moodle - the world's open source learning platform
+This project, the CL4STEM project will pilot and research on innovation for professional development, developed and implemented as an innovation to address quality of secondary education in India, taken to new country contexts of Bhutan, Nigeria, and Tanzania through a South-South collaboration of higher education institutions engaged in Teacher Education.
 
-Moodle <https://moodle.org> is a learning platform designed to provide
-educators, administrators and learners with a single robust, secure and
-integrated system to create personalised learning environments.
+## License
 
-You can download Moodle <https://download.moodle.org> and run it on your own
-web server, ask one of our Moodle Partners <https://moodle.com/partners/> to
-assist you, or have a MoodleCloud site <https://moodle.com/cloud/> set up for
-you.
+CL4STEM is licensed under the [MIT License](LICENSE).
+## Visit Moodle
+[CL4STEM Moodle](https://learn.connectedlearningforstem.org/)
+## Visit website
+[CL4STEM Website](https://connectedlearningforstem.org/)
 
-Moodle is widely used around the world by universities, schools, companies and
-all manner of organisations and individuals.
+# Sponsors
+Connected Learning Initiative for Teacher Education in Mathematics and Science (CLIx4TEMS) is a project funded by the International Development Research Centre (IDRC). 
 
-Moodle is provided freely as open source software, under the GNU General Public
-License <https://docs.moodle.org/dev/License>.
+# Partners
+This project is co-design and developed with Institution from [IBB University, Lapai](https://ibbu.edu.ng), [KASU University ](https://www.kasu.edu.ng/),[Bayero University ](https://www.buk.edu.ng/)  Nigeria.
 
-Moodle is written in PHP and JavaScript and uses an SQL database for storing
-the data.
-
-See <https://docs.moodle.org> for details of Moodle's many features.
+For further enquiries, please email Project Lead, [Abdullahi](https://github.com/abdullahikawu) via abdullahikawu@ibbu.edu.ng or abdullahibnkawu@gmail.com
