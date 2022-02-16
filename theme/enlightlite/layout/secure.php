@@ -72,9 +72,9 @@ echo $OUTPUT->doctype() ?>
 </body>
 </html>
 <?php
-$favicon = $OUTPUT->image_url('favicon2', 'theme');
+$favicon = $OUTPUT->image_url('favicon4', 'theme');
 
 ?>
 <script>
-    $("link[rel*='icon']").attr("href", "<?= $favicon;?>");        
+   $("link[rel*='icon']").attr("href", "<?= $favicon;?>");        
 </script>

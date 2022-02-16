@@ -36,9 +36,9 @@ $check = array_merge($mainblock, $headervalues);
 $fulltemplate = array_merge($check, $footer);
 $OUTPUT->doctype();
 echo $OUTPUT->render_from_template('theme_enlightlite/login', $fulltemplate);
-$favicon = $OUTPUT->image_url('favicon2', 'theme');
+$favicon = $OUTPUT->image_url('favicon4', 'theme');
 
 ?>
 <script>
-    $("link[rel*='icon']").attr("href", "<?= $favicon;?>");        
+  //  $("link[rel*='icon']").attr("href", "<?= $favicon;?>");        
 </script>
